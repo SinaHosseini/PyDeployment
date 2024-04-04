@@ -1,0 +1,5 @@
+val client = OkHttpClient()
+val request = Request.Builder()
+  .url("https://hp-api.onrender.com/api/spells")
+  .build()
+val response = client.newCall(request).execute()

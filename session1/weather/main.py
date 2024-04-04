@@ -13,6 +13,7 @@ def get():
         response = requests.get(
             f"https://goweather.herokuapp.com/weather/{user_text}")
         data = json.loads(response.text)
+        print(data)
 
         window.dec_lb.setText("           " + data["description"])
         window.temp_lb.setText("     " + data["temperature"])
@@ -25,30 +26,30 @@ def get():
             "3 days later\n" + data["forecast"][2]["temperature"] + "\n" + data["forecast"][2]["wind"])
 
         if data["description"] == "Sunny":
-            window.icon_lb.setPixmap(QIcon("Icon\Sun.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Sun.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Partly cloudy":
-            window.icon_lb.setPixmap(QIcon("Icon\Day Partly Cloudy.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Day Partly Cloudy.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Cloudy":
-            window.icon_lb.setPixmap(QIcon("Icon\Day Cloudy.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Day Cloudy.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Rainy":
-            window.icon_lb.setPixmap(QIcon("Icon\Rain Drops.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Rain Drops.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Snow":
-            window.icon_lb.setPixmap(QIcon("Icon\Snow.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Snow.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Wind":
-            window.icon_lb.setPixmap(QIcon("Icon\Wind.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Wind.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Tornado":
-            window.icon_lb.setPixmap(QIcon("Icon\Tornado.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIcon(QIcon("Icon\Tornado.png"))
+            window.icon_lb.setIconSize(QIcon(340, 340))
         elif data["description"] == "Thunderstorm":
-            window.icon_lb.setPixmap(
+            window.icon_lb.setIcon(
                 QIcon("Icon\Day Windy Angled Rain Drops With Lightning.png"))
-            window.icon_lb.pixmap(340, 340)
+            window.icon_lb.setIconSize(QIcon(340, 340))
 
     except:
         msg_box = QMessageBox(text="Connection error")
