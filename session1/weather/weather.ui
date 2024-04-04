@@ -32,7 +32,7 @@ border-radius: 20px;</string>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="tomorrow">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -59,13 +59,12 @@ color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>tomorrow 
-
 </string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="day_later">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -92,13 +91,12 @@ color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>2 day later
-
 </string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="day_later2">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -125,7 +123,6 @@ color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string>3 day later
-
 </string>
          </property>
         </widget>
