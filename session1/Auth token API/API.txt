@@ -1,0 +1,1 @@
+https://danbooru.donmai.us/profile.json?login=your_username&api_key=your_api_key
