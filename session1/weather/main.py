@@ -57,6 +57,8 @@ app = QApplication(sys.argv)
 
 loader = QUiLoader()
 window = loader.load("weather.ui")
+window.setWindowTitle("Weather")
+window.setWindowIcon(QIcon('Icon\Day Partly Cloudy With Angled Rain.png'))
 window.show()
 
 window.btn_search.clicked.connect(get)
