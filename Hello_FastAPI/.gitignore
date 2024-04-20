@@ -1,2 +1,4 @@
 test.png
 __pycache__
+.vscode
+test.py
