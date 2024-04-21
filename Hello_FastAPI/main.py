@@ -34,27 +34,27 @@ def pieces_name(pieces_name: str):
 @app.get("/pieces/{pieces_name}/image")
 def images(pieces_name):
     if pieces_name == "pawn":
-        image = cv2.imread("pics\pawn.png") 
+        image = cv2.imread("https://github.com/SinaHosseini/PyDeployment/blob/570b760c352ff66233571d82253106800a67507f/Hello_FastAPI/pics/pawn.png") 
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "bishop":
-        image = cv2.imread("pics\bishop.png")
+        image = cv2.imread("https://github.com/SinaHosseini/PyDeployment/blob/570b760c352ff66233571d82253106800a67507f/Hello_FastAPI/pics/bishop.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "knight":
-        image = cv2.imread("pics\knight.png")
+        image = cv2.imread("https://github.com/SinaHosseini/PyDeployment/blob/570b760c352ff66233571d82253106800a67507f/Hello_FastAPI/pics/knight.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "rook":
-        image = cv2.imread("pics\rook.png")
+        image = cv2.imread("https://github.com/SinaHosseini/PyDeployment/blob/570b760c352ff66233571d82253106800a67507f/Hello_FastAPI/pics/rook.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "queen":
-        image = cv2.imread("pics\queen.png")
+        image = cv2.imread("https://github.com/SinaHosseini/PyDeployment/blob/570b760c352ff66233571d82253106800a67507f/Hello_FastAPI/pics/queen.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "king":
-        image = cv2.imread("pics\king.png")
+        image = cv2.imread("https://github.com/SinaHosseini/PyDeployment/blob/570b760c352ff66233571d82253106800a67507f/Hello_FastAPI/pics/king.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     else:
