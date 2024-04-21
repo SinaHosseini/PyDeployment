@@ -34,7 +34,7 @@ Get an image of a specific piece identified by pieces_name.
 ```
 127.0.0.1:8000/pieces/king/image
 ```
-![king_pic](https://github.com/SinaHosseini/PyDeployment/blob/ec50febcf46fa6a0538c257e97079aacac4589b4/Hello_FastAPI/pics/king.png?raw=True)
+![king_pic](https://github.com/SinaHosseini/PyDeployment/blob/012e46615443fbe244e558cb77de690caa2b460e/Hello_FastAPI/pics/king.png?raw=True)
 
 
 **All images have been created by fal.ai website**
