@@ -1,5 +1,6 @@
 import io
 import cv2
+from skimage import io as io1
 from fastapi import FastAPI ,HTTPException, status
 from fastapi.responses import StreamingResponse
 
@@ -34,27 +35,27 @@ def pieces_name(pieces_name: str):
 @app.get("/pieces/{pieces_name}/image")
 def images(pieces_name):
     if pieces_name == "pawn":
-        image = cv2.imread("pics\pawn.png") 
+        image = io1.imread("pics/pawn.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "bishop":
-        image = cv2.imread("pics\bishop.png")
+        image = io1.imread("pics/bishop.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "knight":
-        image = cv2.imread("pics\knight.png")
+        image = io1.imread("pics/knight.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "rook":
-        image = cv2.imread("pics\rook.png")
+        image = io1.imread("pics/rook.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "queen":
-        image = cv2.imread("pics\queen.png")
+        image = io1.imread("pics/queen.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "king":
-        image = cv2.imread("pics\king.png")
+        image = io1.imread("pics/king.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     else:
