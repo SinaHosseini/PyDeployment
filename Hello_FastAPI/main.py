@@ -42,7 +42,7 @@ def images(pieces_name):
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "knight":
-        image = cv2.imread("pics\horse.png") # type: ignore
+        image = cv2.imread("pics\knight.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "rook":
@@ -50,11 +50,11 @@ def images(pieces_name):
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "queen":
-        image = cv2.imread("pics\queen.png") # type: ignore
+        image = cv2.imread("pics\queen.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     elif pieces_name == "king":
-        image = cv2.imread("pics\king.png") # type: ignore
+        image = cv2.imread("pics\king.png")
         _, encoded_image = cv2.imencode(".png", image)
         return StreamingResponse(io.BytesIO(encoded_image.tobytes()), media_type="image/png")
     else:
