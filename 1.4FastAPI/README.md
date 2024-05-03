@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 <hr>
-Use the following commands to run the program.
+Use the following commands to run the program.<br>
 Database API:
 
 ```
