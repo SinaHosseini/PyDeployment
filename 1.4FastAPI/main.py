@@ -1,67 +1,40 @@
-import sqlite3
-from fastapi import FastAPI, Form, HTTPException
+import cv2
+import numpy as np
+from deepface import DeepFace
+from fastapi import FastAPI, File, UploadFile, HTTPException
+
+# objs = DeepFace.analyze(img_path = "photo_2024-05-03_20-40-35.jpg",
+#         actions = ['age', 'gender', 'race', 'emotion']
+# )
+# for obj in objs:
+#     print("Age:", obj["age"])
+#     print("Gender:", obj["dominant_gender"])
+#     print("Race:", obj["dominant_race"])
+#     print("Emotion:", obj["dominant_emotion"])
 
 app = FastAPI()
 
 
-def database():
-    con = sqlite3.connect("tasks.db")
-    cur = con.cursor()
-
-    return con, cur
-
-
 @app.get("/")
 def read_root():
-    return "Hi, welcome to my api In this api there is  requests for read, add, update and remove database--created by Sina Hosseini"
+    return "Hello, welcome to my api In this api there is face analysis is done, such as age, gender, race and emotion, just send a photo file and see the result--created by Sina Hosseini"
 
 
-@app.get("/items")
-def read_data():
-    _, cur = database()
-    res = cur.execute("SELECT * FROM tasks")
-    res = res.fetchall()
+@app.post("/analyze_image")
+async def image_processing(inp_file: UploadFile = File(None)):
+    if not inp_file.content_type.startswith("image/"):
+        raise HTTPException(status_code=415, detail="Unsupported file type")
+    contents = await inp_file.read()
+    np_array = np.frombuffer(contents, dtype=np.uint8)
+    image_path = cv2.imdecode(np_array, cv2.IMREAD_UNCHANGED)
+    cv2.imwrite("img.jpg", image_path)
 
-    return res
+    objs = DeepFace.analyze(img_path="img.jpg", actions=[
+                            "age", "gender", "race", "emotion"])
+    for obj in objs:
+        age = obj["age"]
+        gender = obj["dominant_gender"]
+        race = obj["dominant_race"]
+        emotion = obj["dominant_emotion"]
 
-
-@app.post("/items")
-def add_data(id: int = Form(), tittle: str = Form(), description: str = Form(), time: str = Form(), status: int = Form(0)):
-    con, cur = database()
-    cur.execute(
-        f"INSERT INTO tasks (id, tittle, description, time, status) VALUES (?, ?, ?, ?, ?)",
-        (id, tittle, description, time, status)
-    )
-    con.commit()
-
-    return read_data()
-
-
-@app.put("/items/{id}")
-def update_data(id: int, tittle: str = Form(), description: str = Form(), time: str = Form(), status: int = Form()):
-    con, cur = database()
-    cur.execute("SELECT id FROM tasks")
-    exs_id = [row[0] for row in cur.fetchall()]
-    if id not in exs_id:
-        raise HTTPException(status_code=404, detail="Item not found")
-
-    else:
-        cur.execute("UPDATE tasks SET tittle=?, description=?, time=?, status=? WHERE id=?",
-                    (tittle, description, time, status, id))
-        con.commit()
-
-    return read_data()
-
-
-@app.delete("/items/{id}")
-def delete_item(id: int):
-    con, cur = database()
-    cur.execute("SELECT id FROM tasks")
-    exs_id = [row[0] for row in cur.fetchall()]
-    if id not in exs_id:
-        raise HTTPException(status_code=404, detail="Item not found")
-
-    else:
-        cur.execute("DELETE FROM tasks WHERE id=?", (id,))
-        con.commit()
-        return {"message": "Item deleted"}
+    return age, gender, race, emotion
