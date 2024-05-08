@@ -23,7 +23,7 @@ pip install -r requirements.txt
 <strong>Create the FastAPI Code</strong><br><hr>
 
 - Create an `app` directory and enter it.<br>
-- Create a [`main.py`](https://github.com/MohamadNematizadeh/PyDeploy/blob/8154e5cf30b6db787783de3050bfd7dd893aa002/FastAPI/1.5.FastaAPI_Docke/app/main.py) file.
+- Create a [`main.py`](https://github.com/SinaHosseini/PyDeployment/blob/1241c133a2705531bc2ab283655c1c494222dfcf/1.5FastAPIDocker/app/main.py) file.
 
 <strong>DockerFile</strong><br><hr>
 Now in the same project directory create a file [`Dockerfile`](https://github.com/SinaHosseini/PyDeployment/blob/4e50ed613a7b8b36830d7a54f275f1ab76a26be2/1.5FastAPIDocker/Dockerfile)
