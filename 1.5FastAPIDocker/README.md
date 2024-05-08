@@ -50,7 +50,7 @@ docker run -d --name mycontainer -p 80:80 myimage
 Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
 
 You will see the automatic interactive API documentation (provided by Swagger UI):<br>
-![img](images/img1.jpg)
+![img](images/img1.jpg)<br><br>
 <strong>Alternative API docs</strong><br><hr>
 And you can also go to http://192.168.99.100/redoc or http://127.0.0.1/redoc (or equivalent, using your Docker host).
 
