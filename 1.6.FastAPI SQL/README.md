@@ -46,7 +46,7 @@ Now let's check the file sql_app/[schemas.py](https://github.com/SinaHosseini/Py
 
 ### Create the CRUD parts
 
-Now let's see the file sql_app/[crud.py](https://github.com/SinaHosseini/PyDeployment/blob/main/1.6.FastAPI%20SQL/expert_app/crud.py).<hr>
+Now let's see the file sql_app/[crud.py](https://github.com/SinaHosseini/PyDeployment/blob/main/1.6.FastAPI%20SQL/expert_app/crud.py).
 
 In this file we will have reusable functions to interact with the data in the database.
 
