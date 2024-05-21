@@ -61,7 +61,7 @@ And now in the file sql_app/[main.py](https://github.com/SinaHosseini/PyDeployme
 - Set `PostgreSQL` database url variable, for example:
 
 ```
-# SQLALCHEMY_DATABASE_URL = "postgresql://sina:ramze_sina@localhost:5432/database_sina"
+SQLALCHEMY_DATABASE_URL = "postgresql://sina:ramze_sina@localhost:5432/database_sina"
 ```
 
 - Run `PostgreSQL` docker container, for example:
