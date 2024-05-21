@@ -1,11 +1,17 @@
+# 
 FROM python
 
-WORKDIR /usr/src
+# 
+WORKDIR /code
 
-COPY ./requirements.txt ./requirements.txt
+# 
+COPY ./requirements.txt /code/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+# 
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY . .
+# 
+COPY ./expert_app /code/expert_app
 
-CMD ["uvicorn", "main:app", "--proxy-headers", "--host", "0.0.0.0", "--port", "80"]
+# 
+CMD ["uvicorn", "expert_app.main:app", "--host", "0.0.0.0", "--port", "80"]

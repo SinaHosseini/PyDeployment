@@ -3,8 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
-SQLALCHEMY_DATABASE_URL = "postgresql://sina:8281@localhost:5432/database-sina"
-# SQLALCHEMY_DATABASE_URL = "postgresql://root:usvwZFdye72zqtOd0anFj7N2@sina-postgre:5432/postgres"
+# SQLALCHEMY_DATABASE_URL = "postgresql://sina:ramze_sina@localhost:5432/database_sina"  # local host
+SQLALCHEMY_DATABASE_URL = "postgresql://root:usvwZFdye72zqtOd0anFj7N2@sina-postgre:5432/postgres"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
