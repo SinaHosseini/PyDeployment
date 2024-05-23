@@ -64,7 +64,8 @@ And now in the file sql_app/[main.py](https://github.com/SinaHosseini/PyDeployme
 SQLALCHEMY_DATABASE_URL = "postgresql://sina:ramze_sina@localhost:5432/database_sina"
 ```
 
--  Docker pull postgres
+- Docker pull postgres
+
 ```
 docker pull postgres
 ```
@@ -94,6 +95,7 @@ liara deploy --platform docker --port 80
 ```
 
 ## Interactive API docs
+
 Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
 
 You will see the automatic interactive API documentation (provided by Swagger UI):<br><br>
