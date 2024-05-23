@@ -64,6 +64,11 @@ And now in the file sql_app/[main.py](https://github.com/SinaHosseini/PyDeployme
 SQLALCHEMY_DATABASE_URL = "postgresql://sina:ramze_sina@localhost:5432/database_sina"
 ```
 
+-  Docker pull postgres
+```
+docker pull postgres
+```
+
 - Run `PostgreSQL` docker container, for example:
 
 ```
@@ -87,3 +92,9 @@ You can run the API on [liara.ir](https://console.liara.ir/) :<br>
 ```
 liara deploy --platform docker --port 80
 ```
+
+## Interactive API docs
+Now you can go to http://192.168.99.100/docs or http://127.0.0.1/docs (or equivalent, using your Docker host).
+
+You will see the automatic interactive API documentation (provided by Swagger UI):<br><br>
+![pic](photo_2024-05-23_20-30-31.jpg?raw=True)
