@@ -59,7 +59,7 @@ async def get_coordinates(message2, message3):
 
 async def main():
     parser = argparse.ArgumentParser(
-        description="This code get text from user and find rhymes, find states and cities.")
+        description="This code get text from user and find rhymes, find coordinates of states and cities.")
     parser.add_argument("--message1", type=str, help="enter your text")
     parser.add_argument("--message2", type=str)
     parser.add_argument("--message3", type=str)
