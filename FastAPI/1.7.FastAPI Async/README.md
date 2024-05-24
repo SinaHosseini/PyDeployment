@@ -5,8 +5,8 @@ This Async API provides asynchronous endpoints for accessing various functionali
 1. Rhyme Finder: Allows users to find rhymes for a given word.
 2. Geographical Information Retrieval:
 
-- - City Finder: Enables users to find cities within a specific state by providing its ID.
-- - Latitude and Longitude Finder: Provides latitude and longitude coordinates for a given city.
+    - City Finder: Enables users to find cities within a specific state by providing its ID.
+    - Latitude and Longitude Finder: Provides latitude and longitude coordinates for a given city.
 
 In this program, `argparse` library is used to receive input.
 you can run program by this command:
