@@ -27,7 +27,7 @@ def get_states(message):
     for state in states:
         print("\n", state)
         if state['name'] == user_state:
-            print(state['id'])
+            # print(state['id'])
             state_id = state['id']
 
     return state_id
@@ -42,6 +42,7 @@ def get_cities(message, state_id):
     user_city = f'{message}'
     for city in cities:
         print("\n", city)
+    for city in cities:
         if city['name'] == user_city:
             print("Your city found: ")
             print("Latitude : ", city['latitude'])
