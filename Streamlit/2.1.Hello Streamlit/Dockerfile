@@ -1,12 +1,17 @@
+# 
 FROM python
 
-WORKDIR /usr/src/app
+# 
+WORKDIR /app
 
-COPY ./requirements.txt ./requirements.txt
+# 
+COPY ./requirements.txt /app/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r ./requirements.txt
+# 
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
+# 
 COPY . .
 
-ENTRYPOINT ["streamlit", "run", "Counter_App.py", "--server.port=8501", "--server.address=0.0.0.0"]
-
+# 
+ENTRYPOINT ["streamlit", "run", "counter_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
