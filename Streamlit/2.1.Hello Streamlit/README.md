@@ -7,7 +7,8 @@ link: https://sina-docker.liara.run/
 
 ## Simple Data Science App
 
-This is a simple data science app built using Streamlit. It allows users to upload a CSV file, view its contents in a table, and generate line or bar charts based on the data.
+This is a simple data science app built using Streamlit. It allows users to upload a CSV file, view its contents in a table, and generate line or bar charts based on the data.<br>
+Link: https://app-frepzst4ijjqlbjss65bpn.streamlit.app
 
 ### Features
 
