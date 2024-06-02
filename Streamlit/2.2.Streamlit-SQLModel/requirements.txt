@@ -1,0 +1,5 @@
+sqlmodel
+streamlit
+requests
+dotenv
+passlib
