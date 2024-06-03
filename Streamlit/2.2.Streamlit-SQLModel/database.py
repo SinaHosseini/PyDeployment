@@ -4,7 +4,7 @@ from models import User, Message, Optional
 
 # DATABASE_URL = 'sqlite:///database.db'
 # DATABASE_URL = "postgresql://sina:ramze_sina@localhost:5432/database_sina"
-DATABASE_URL = "postgresql://root:z8aCVH29rqcz4lQ85n2a7JHF@sina-postgre:5432/postgres"
+DATABASE_URL = "postgresql+psycopg2://root:z8aCVH29rqcz4lQ85n2a7JHF@sina-postgre:5432/postgres"
 engine = create_engine(DATABASE_URL)
 
 
