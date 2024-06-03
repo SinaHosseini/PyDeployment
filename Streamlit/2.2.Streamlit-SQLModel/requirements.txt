@@ -1,6 +1,4 @@
-sqlmodel
 streamlit
+sqlmodel
 requests
-dotenv
 passlib
-requests
