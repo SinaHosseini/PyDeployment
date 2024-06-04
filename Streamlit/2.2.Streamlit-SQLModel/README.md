@@ -3,8 +3,7 @@
 ## AI Chat Bot
 
 This project allows you to chat with AI.<br>
-Link: https://sina-docker.liara.run/
-
+Link: https://sina-chatbot.streamlit.app/
 ## Local Run
 
 At first, you must install all the required libraries that are in the `requirements.txt` file with the following command:
