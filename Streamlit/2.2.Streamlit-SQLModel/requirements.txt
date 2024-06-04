@@ -3,4 +3,4 @@ sqlmodel
 requests
 passlib
 python-dotenv
-psycopg2
+
