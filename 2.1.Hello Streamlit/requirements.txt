@@ -1,0 +1,4 @@
+streamlit
+numpy
+opencv-python
+pandas

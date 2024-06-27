@@ -1,0 +1,6 @@
+streamlit
+sqlmodel
+requests
+passlib
+python-dotenv
+
