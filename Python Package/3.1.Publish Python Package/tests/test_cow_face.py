@@ -1,15 +1,15 @@
-from fantasy_face import transparent_sticker
+from cow_face import transparent_sticker
 import cv2
 import os
 import sys
 import unittest
 import numpy as np
 
-# Add the path to the fantasy_face module
+# Add the path to the cow_face module
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 
-class TestFantasyFace(unittest.TestCase):
+class TestCowFace(unittest.TestCase):
     def setUp(self):
         self.cow_path = os.path.abspath(os.path.join(
             os.path.dirname(__file__), '..', 'input', 'cow.jpg'))

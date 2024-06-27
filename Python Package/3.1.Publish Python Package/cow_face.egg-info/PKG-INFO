@@ -1,3 +1,14 @@
+Metadata-Version: 2.1
+Name: cow-face
+Version: 1.0.1
+Summary: Add a cow mask to the face
+Home-page: https://github.com/SinaHosseini/Cow-Face
+Author: Sina Hosseini
+Author-email: sshosseinivaez@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
 # Cow Face
 
 Add a cow mask to the face using OpenCV and Python.
@@ -69,3 +80,5 @@ Email: sshosseinivaez@gmail.com
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
