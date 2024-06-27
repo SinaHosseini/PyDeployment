@@ -14,10 +14,17 @@ To install the package, you can use the following command:
 pip install git+https://github.com/SinaHosseini/amoo_sina_lion.git
 ```
 
+or
+
+```
+pip install fantasy-face
+```
+
 ## Usage
 
 Here's an example of how to use the package:
-``` python
+
+```python
 import fantasy_face
 import cv2
 
@@ -42,16 +49,23 @@ cv2.imwrite("output/animal_face.jpg", convert_image)
 ```
 
 You can also run the script directly from the command line:
+
 ```bash
 python fantasy_face.py --image_path path/to/your/image.jpg
 ```
+
 ## Requirements
+
 Python 3.6+<br>
 OpenCV<br>
 NumPy
+
 ## Author
+
 Sina Hosseini
 
 Email: sshosseinivaez@gmail.com
+
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
