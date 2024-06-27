@@ -9,7 +9,7 @@ def readme():
 
 setup(
     name="fantasy_face",
-    version="0.1.1",
+    version="1.0.1",
     author="Sina Hosseini",
     author_email="sshosseinivaez@gmail.com",
     description="Add an animal mask to the face",
