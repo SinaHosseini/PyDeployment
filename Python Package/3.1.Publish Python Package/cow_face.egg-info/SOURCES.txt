@@ -1,0 +1,8 @@
+README.md
+setup.py
+cow_face/__init__.py
+cow_face/cow_face.py
+cow_face.egg-info/PKG-INFO
+cow_face.egg-info/SOURCES.txt
+cow_face.egg-info/dependency_links.txt
+cow_face.egg-info/top_level.txt
