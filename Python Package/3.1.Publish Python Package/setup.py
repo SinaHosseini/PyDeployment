@@ -9,13 +9,13 @@ def readme():
 
 setup(
     name="fantasy_face",
-    version="1.0.0",
+    version="0.1.1",
     author="Sina Hosseini",
     author_email="sshosseinivaez@gmail.com",
     description="Add an animal mask to the face",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/SinaHosseini/amoo_sina_lion",
+    url="https://github.com/SinaHosseini/Fantasy-Face",
     requires=[],
     packages=["fantasy_face"]
 )

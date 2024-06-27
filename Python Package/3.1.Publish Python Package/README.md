@@ -11,7 +11,7 @@ Add an animal mask to the face using OpenCV and Python.
 To install the package, you can use the following command:
 
 ```sh
-pip install git+https://github.com/SinaHosseini/amoo_sina_lion.git
+pip install git+pip install git+https://github.com/SinaHosseini/Fantasy-Face
 ```
 
 or
