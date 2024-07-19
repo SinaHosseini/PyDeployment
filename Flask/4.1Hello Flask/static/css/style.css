@@ -1,0 +1,82 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#navbar .navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+  
+#navbar .navbar-nav {
+    text-align: center;
+}
+  
+#navbar .navbar-nav .nav-item {
+    display: inline-block;
+}
+
+#aboutMeMenu {
+    display: none;
+    position: absolute;
+    background: rgb(255, 125, 125);
+    border: 1px solid #ccc;
+}
+
+#aboutMeMenu .dropdown-item {
+    color: white;
+}
+  
+  
+#aboutMeLink:hover + #aboutMeMenu,
+#aboutMeMenu:hover {
+    display: block;
+}
+
+#aboutMeLink:hover{
+    color: rgb(255, 87, 87) !important;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu li a:hover{
+    background: none;
+}
+
+#nav-item:hover{
+    color: rgb(255, 87, 87) !important;
+}
+
+#navbarNavDropdown{
+    margin-right: 290px;
+}
+
+h3{
+    color: white;
+    margin-top: 300px;
+    margin-left: 190px;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+    margin-left: 190px;
+    display: block;
+}
+
+.container-fluid{
+    position: sticky;
+}
+
+#contact-me{
+    background-color: rgb(255, 87, 87);
+    
+    margin-left: 190px;
+}
+
+#contact-me a{
+    text-decoration: none;
+    color: white;
+}

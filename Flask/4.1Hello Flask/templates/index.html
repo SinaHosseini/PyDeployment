@@ -1,15 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <title>Document</title>
 
-        <link rel="stylesheet" type="text/css" href="static/css/style.css">
-    </head>
-    <body>
-        <p>Hello {{name}}</p>
-        <p>i am {{x}} years old</p>
-        <a href="/download">Download Page</a>
-    </body>
-    </html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Personal WebSite</title>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="static/js/bootstrap.js"></script>
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white ms-5" href="/">My Personal WebSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white me-5" aria-current="page" href="/" id="nav-item">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" id="aboutMeLink"
+                            aria-expanded="false">
+                            About me
+                        </a>
+                        <ul class="dropdown-menu" id="aboutMeMenu">
+                            <li><a class="dropdown-item" href="sshosseinivaez@gmail.com">My Email</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/sinahosseini">My Github</a></li>
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/sina-hosseini-02922a276/">My
+                                    Linkedin</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.instagram.com/s.sina_hosseini.v?igsh=MW5yYXAzemcwMDRtZw==">My
+                                    Instagram</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://t.me/mr_sshv"><b>Contact Me</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col">
+            <h3>Hi there, This is Sina</h3>
+            <h1 class="mt-5">Website Developer</h1>
+            <button type="button" class="btn btn-light btn-lg rounded-0 border border-0 mt-5" id="contact-me"><a
+                    href="https://t.me/mr_sshv">Contact Me</a></button>
+        </div>
+        <div class="col">
+            <img src="static/images/Polish_20240719_141504991.png" class="img-fluid" alt="...">
+        </div>
+    </div>
+
+</body>
+
+</html>
