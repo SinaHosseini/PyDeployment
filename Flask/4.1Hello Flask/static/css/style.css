@@ -110,4 +110,5 @@ h1{
 
 #card:hover{
     border-style: solid !important;
+    border-color: gray;
 }
