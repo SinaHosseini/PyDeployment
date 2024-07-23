@@ -58,13 +58,7 @@ body{
     margin-right: 290px;
 }
 
-h3{
-    color: white;
-    margin-top: 260px;
-    margin-left: 190px;
-}
-
-h1{
+#h1{
     color: white;
     font-size: 60px;
     margin-left: 190px;
@@ -73,7 +67,6 @@ h1{
 
 #contact-me{
     background-color: rgb(255, 87, 87);
-    
     margin-left: 190px;
 }
 
@@ -109,6 +102,31 @@ h1{
 }
 
 #card:hover{
+<<<<<<< HEAD
     border-style: solid !important;
     border-color: gray;
+=======
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(180, 180, 180);
+}
+
+#card{
+    padding: 14px;
+}
+
+#bodyLog{
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+section{
+    margin-bottom: 120px;
+>>>>>>> 85efc5876b997a6aa9f6767786fa22b5fea7bd6b
 }
