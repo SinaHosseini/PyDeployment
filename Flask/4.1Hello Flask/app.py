@@ -7,6 +7,7 @@ app = Flask("My Personal WebSite")
 def my_root():
     return render_template("index.html")
 
+
 @app.route("/login.html")
 def login():
     return render_template("login.html")

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static\css\bootstrap.css" type="
+    text/css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+</head>
+
+<body
+    style="background-image: url('static/images/fac.jpg'); background-color: lightblue; background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover; height: 40px;">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="static/js/bootstrap.js"></script>
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <h2 style="font-family: 'Gill Sans', sans-serif; margin-left: 15px;">Analyzing Face App</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/" style="padding-right: 50px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/login" style="padding-right: 50px;">Login/Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/bmr" style="padding-right: 50px;">BMR</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="padding-right: 50px;">
+                                About me
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sshosseinivaez@gmail.com">My Email</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/sinahosseini">My Github</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.linkedin.com/in/sina-hosseini-02922a276/">My
+                                        Linkedin</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.instagram.com/s.sina_hosseini.v?igsh=MW5yYXAzemcwMDRtZw==">My
+                                        Instagram</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                <li><a class="dropdown-item" href="https://t.me/mr_sshv"><b>Contact Me</b></a></li>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container card-container mt-5" style="width: 18rem;">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item" id="blurred-box">
+                    <a class="nav-link" aria-current="page" href="/login"
+                        style="padding-left: 2.44rem; padding-right: 2.44rem; color: pink;">Login</a>
+                </li>
+                <li class="nav-item" id="blurred-box">
+                    <a class="nav-link active" href="/register"
+                        style="padding-left: 2.44rem; padding-right: 2.44rem;">Register</a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Sign Up</h2>
+                        <hr>
+                        <form method="post">
+                            <div class="mb-3">
+                                <label class="form-label" style="margin-right: 150px;">Email address</label>
+                                <input type="email" class="form-control" name="email" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" style="margin-right: 170px;">User Name</label>
+                                <input type="text" class="form-control" name="text" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" style="margin-right: 190px;">Password</label>
+                                <input type="password" class="form-control" name="password" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" style="margin-right: 120px;">Confirm Password</label>
+                                <input type="password" class="form-control" name="password" />
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="margin-right: 190px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

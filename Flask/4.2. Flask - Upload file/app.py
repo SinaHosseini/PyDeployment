@@ -56,4 +56,26 @@ def upload():
                 my_image.save(save_path)
                 result = DeepFace.analyze(img_path=save_path, actions=["age"])
 
-            return render_template("result.html", age=result[0]['age'])
+            return render_template("result.html", age=result[0]["age"])
+
+
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
+
+@app.route("/bmr", methods=["GET", "POST"])
+def bmr():
+    if request.method == "GET":
+        return render_template("bmr.html")
+    elif request.method == "POST":
+        gender = request.form["gender"]
+        weight = float(request.form["weight"])
+        height = float(request.form["height"])
+        age = int(request.form["age"])
+        if gender == "male":
+            result = (10 * weight) + (6.25 * height) - (5 * age) + 5
+        elif gender == "female":
+            result = (10 * weight) + (6.25 * height) - (5 * age) - 16
+
+        return render_template("resultBMR.html", BMR=result)
