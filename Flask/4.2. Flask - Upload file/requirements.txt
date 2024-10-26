@@ -1,4 +1,8 @@
 flask
+<<<<<<< HEAD
+deepface
+=======
 sqlmodel
 bcrypt
 pydantic
+>>>>>>> 6f5ac385bc3291605b327ea57a7cb75b718a2844

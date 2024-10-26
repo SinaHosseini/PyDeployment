@@ -1,4 +1,1 @@
-flask
-bcrypt
-sqlmodel
-pydantic
+Flask

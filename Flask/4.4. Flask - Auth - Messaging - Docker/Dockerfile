@@ -10,5 +10,5 @@ EXPOSE 5000
 
 CMD [ "flask", "run", "--host", "0.0.0.0", "--port", "5000" ]
 
-# docker build -t aiwebsite .
-# docker run -p 5000:5000 aiwebsite
+# docker build -t AIWebSite .
+# docker run -p 5000:5000 AIWebSite
